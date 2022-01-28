@@ -1,0 +1,25 @@
+
+//Criação do Banco de Dados
+CREATE DATABASE login;
+
+
+//Usar a base de dados criada
+USE login;
+
+
+// Estrutura do Banco de Dados
+CREATE TABLE `login`.`usuario` (
+  `usuario_id` INT NOT NULL AUTO_INCREMENT,
+  `usuario` VARCHAR(200) NOT NULL,
+  `senha` VARCHAR(32) NOT NULL,
+  PRIMARY KEY (`usuario_id`));
+
+
+//Inserts
+INSERT INTO `usuario` (`usuario`,`senha`) VALUES ('tinotredame','10f722b5984a49bce67d434464fae37e');
+INSERT INTO `usuario` (`usuario`,`senha`) VALUES ('iandell','202cb962ac59075b964b07152d234b70');
+
+
+//Usuários e senhas
+tinotredame / ti12345
+iandell / 1234
